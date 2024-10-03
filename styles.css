@@ -4,5 +4,44 @@
 }
 
 .page {
-    background-color: ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.app {
+    height: 30rem;
+    width: 40rem;
+    margin: auto;
+    background-color: pink;
+}
+
+.toprow {
+    background-color: white;
+}
+
+#newnotebutton {
+    margin: 5px;
+    padding: 5px;
+}
+
+.mainarea {
+    display: flex;
+    flex-direction: row;
+}
+
+.notelistarea {
+    width: 25%;
+    background-color: aqua;
+}
+
+.listednote {
+    height: 5rem;
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
 }
