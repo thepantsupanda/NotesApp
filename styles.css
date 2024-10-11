@@ -10,38 +10,66 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    background-color: skyblue;
+    background: rgb(0,209,255);
+    background: linear-gradient(0deg, rgba(0,209,255,1) 20%, rgba(212,253,45,1) 100%);
 }
 
 .app {
+    display: flex;
+    flex-flow: column;
     height: 30rem;
     width: 40rem;
     margin: auto;
-    background-color: pink;
 }
 
-.toprow {
-    background-color: white;
+.topRow {
+    flex: 0 1 auto;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
-#newnotebutton {
+#newNoteButton {
     margin: 5px;
     padding: 5px;
 }
 
-.mainarea {
+.mainArea {
     display: flex;
     flex-direction: row;
+    flex: 1 1 auto;
 }
 
-.notelistarea {
+.noteListContainer {
     width: 25%;
-    background-color: aqua;
+    height: 27.5rem;
+    overflow-y: scroll;
+    border-radius: 0.3rem;
+    margin-right: 0.3rem;
 }
 
-.listednote {
+.listedNote {
     height: 5rem;
-    margin: 5px;
+    margin-bottom: 0.3rem;
     padding: 5px;
-    background-color: red;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.3rem;
+}
+
+.noteEditArea {
+    width: 100%;
+    height: 27.5rem;
+    overflow-y: scroll;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 0.3rem;
+}
+
+.mainNoteTitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.mainNoteBody {
+    margin: 10px;
 }
