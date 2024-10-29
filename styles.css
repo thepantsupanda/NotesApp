@@ -44,7 +44,7 @@
     flex: 1 1 auto;
 }
 
-.noteListContainer {
+#noteListContainer {
     width: 25%;
     height: 27.5rem;
     overflow-y: scroll;
